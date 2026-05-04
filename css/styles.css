@@ -19,6 +19,8 @@
         Light blue:    #93a4cf
         Light Green:   #92c3b2
 ----------------------------------------------- */
+
+
 :root {
      --color-blue: #00539a;
      --color-green: #008762;
@@ -30,6 +32,7 @@
 
      --font-main: 'EB Garamond', Garamond, serif;
      --font-bold: 'Oswald', Arial, sans-serif;
+     --font-reg: 
 
      --spacing-sm: 0.7rem;
      --spacing-md: 1.5rem;
@@ -37,7 +40,7 @@
 
      -radius: 8px;
      --border-gold: 2px solid var(--color-gold)
-
+   
 
 } 
 
@@ -111,7 +114,7 @@ header {
      min-height: 100vh;
      background-size: cover;
      background-position: center;
-
+     font-family: var(--font-bold);
 }
 
 /* Dark overlay on the hero image for text readability */
@@ -130,69 +133,116 @@ header {
     text-align: center;
     color: var(--color-white);
     z-index: 1;
-    padding: 2rem;
+    padding-top: 14rem;
 }
 
 .hero-content h1 {
-     /* left off here */
+     font-size: 3.5rem;
+     margin-bottom: 0.5rem;
+     text-shadow: 2px 2px 6px rgba(0, 0, 0,0.5);
 }
 
 .hero-content p {
-     /* TODO */ ;
+     font-size: 1.4rem;
+     color: var(--Color-gold);
+     margin-bottom: 1.5rem;
 }
 
 .btn {
-     /* TODO */ ;
+     display: inline-block;
+     background-color: var(--Color-gold);
+     color: var(--color-blue);
+     padding: 0.8rem 2rem;
+     border-radius: 4px;
+     text-decoration: none;
+     font-weight: bold;
+     font-size: 1.1rem;
+     transition: background-color 0.5s;
 }
 
 .btn:hover {
-     /* TODO */ ;
+     background-color: var(--color-ltgreen);
 }
 
 /* ===============================================
     MAIN CONTENT SECTIONS
     =============================================== */
 main {
-     /* TODO */ ;
+     max-width: 1200px; 
+     margin: 0 auto;
+     padding: 0 2rem;
+     font-family: var(--font-reg)
+}
+
+main p {
+     margin-bottom: 1rem;
+}
+
+main #about p {
+     max-width: 800px;
+}
+
+main #about p:first-child {
+     font-weight: bold;
 }
 
 section {
-     /* TODO */ ;
+     padding: 4rem 0;
+     border-bottom: 2px solid var(--color-ltblue);
 }
 
 section:last-child {
-     /* TODO */ ;
+     border-bottom: none;
 }
 
 .section-title {
-     /* TODO */ ;
+     font-size: 2rem;
+     color: var(--Color-dark);
+     margin-bottom: 0.5rem;
+     padding-bottom: 0.5rem;
+     border-left: 5px solid var(--color-green);
+     padding-left: 1rem;
 }
-
 .section-subtitle {
-     /* TODO */ ;
+     color: var(--color-ltblue);
+     margin-bottom: 2rem;
+     font-style: italic;
 }
 
 /* ===============================================
     COURSES GRID — What I Learned
     =============================================== */
 .courses-grid {
-     /* TODO */ ;
+     display: flex;
+     flex-wrap: wrap;
+     gap: 1.5rem;
+     margin-top: 1.5rem;
+   
 }
 
 .course-card {
-     /* TODO */ ;
+     flex: 1 1 220px;
+      background: var(--color-white);
+     border: 2px solid var(--color-ltblue);
+     border-top: 5px solid var(--color-green);
+     border-radius: 6px;
+     padding: 1.5rem;
+     box-shadow: 0 2px 8px rgba(0,0,0,0.3)
 }
 
 .course-card h3 {
-     /* TODO */ ;
+     color: var(--Color-dark);
+     margin-bottom: 0.75rem;
 }
 
 .course-card ul {
-     /* TODO */ ;
+     padding-left: 1.2rem;
+
 }
 
 .course-card li {
-     /* TODO */ ;
+     margin-bottom: 0.4rem;
+     font-size: 0.95rem;
 }
 
 /* ===============================================
